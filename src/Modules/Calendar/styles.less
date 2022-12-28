@@ -1,0 +1,68 @@
+#content {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  #head {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    //#monthYear { }
+  }
+
+  #body {
+    .col {
+      text-align: left;
+      font-size: small;
+      padding: 5px;
+      width: auto;
+      height: 13vh;
+      transition:all 1s;
+      .alert {
+        z-index: 10;
+        font-size: auto;
+        padding: 3px;
+        /*font-size: 13px*/
+        text-align: center;
+        box-shadow: 0px 1px 12px 0px rgb(106, 111, 109);
+      }
+      .alert.congress {
+        position: relative;
+        background-color: springgreen;
+      }
+      //.holiday { }
+      .alert.holiday {
+        background-color: orangered;
+        /*font-size: 13px*/
+      }
+      .alert.term {
+    
+      }
+    
+      .alert.term.enable {
+        border-color: chartreuse
+      }
+      .alert.term.disable {
+        border-color: crimson
+      }
+    }
+    .col:hover {
+      box-shadow: 0px 1px 12px 0px rgb(106, 111, 109);
+      transition:all 500ms;
+    }
+    .col.currentDay {
+      background-color: lemonchiffon;
+    }
+  }
+  
+  
+
+  //.congress { }
+  
+
+  .clicked {
+    background-color: rgba(62, 206, 34, 0.5);
+    transition:all 1s;
+  }
+
+  
+}

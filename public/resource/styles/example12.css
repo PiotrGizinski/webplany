@@ -1,0 +1,56 @@
+#content .card .activitie {
+  background-color: coral;
+}
+#content .card .instructor {
+  background-color: yellowgreen;
+}
+#content .card .transfer {
+  background-color: coral;
+  opacity: 0.7;
+}
+#content .card .transfer.instructor {
+  background-color: yellowgreen;
+  opacity: 0.7;
+}
+#content .card .card-body {
+  padding: 10px;
+}
+#content .card .card-body #table {
+  border: 1px solid;
+  border-color: black;
+}
+#content .card .card-body #table .row#head .col {
+  text-align: center;
+}
+#content .card .card-body #table #body .row .hour {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-color: black;
+}
+#content .card .card-body #table #body .row .col {
+  transition: all 1s;
+  padding: 5px;
+  height: 4.5vh;
+}
+#content .card .card-body #table #body .row .col .alert {
+  width: 100%;
+  padding: 3px;
+  font-size: medium;
+  text-align: center;
+}
+#content .card .card-body #table #body .row .col.clicked {
+  background-color: rgba(62, 206, 34, 0.5);
+  transition: all 1s;
+}
+#content .card .card-body #table #body .row:first-of-type .hour {
+  border: 0px;
+  border-right: 1px solid;
+  border-color: black;
+}
+#content .card .card-footer {
+  padding: 2px;
+}
+#content .card .card-footer #legend {
+  justify-content: center;
+  align-items: center;
+}

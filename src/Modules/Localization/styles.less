@@ -1,0 +1,22 @@
+@vert-position: center;
+
+#content {
+    #head {
+        align-items: @vert-position;
+        justify-content: @vert-position;
+        padding: 2px;
+        position: relative;
+    }
+    #body {
+        .row {
+            align-items: @vert-position;
+            justify-content: @vert-position;
+            .col {
+                padding: 10px;
+                &.col-3 {
+                    padding: 0px
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+#content {
+  .card {
+    .activitie {
+      background-color: coral;
+      //box-shadow: 0px 1px 12px 0px rgb(106, 111, 109);
+    }
+    .instructor {
+      background-color: yellowgreen;
+    }
+    .transfer {
+      background-color: coral;
+      opacity: 0.7;
+    }
+    .transfer.instructor {
+      background-color: yellowgreen;
+      opacity: 0.7;
+    }
+    .card-header {
+      .nav {
+        .nav-item {
+          
+        }
+      }
+    }
+    .card-body {
+      padding: 10px;
+      #table {
+        border: 1px solid;
+        border-color: black;
+        .row#head {
+          .col { 
+            text-align: center;
+          }
+        }
+        #body {
+          .row {
+            .hour {
+              border-top: 1px solid;
+              border-right: 1px solid;
+              border-color: black;
+            }
+            .col {
+              transition: all 1s;
+              padding: 5px;
+              height: 4.5vh;
+              .alert {
+                width: 100%;
+                padding: 3px;
+                font-size: medium;
+                text-align: center;
+              }
+              
+              
+            }
+            .col.clicked {
+              background-color: rgba(62, 206, 34, 0.5);
+              transition: all 1s;
+            }
+          }
+          .row:first-of-type {
+            .hour {
+              border: 0px;
+              border-right: 1px solid;
+              border-color: black;
+            }
+          }
+        }
+      }
+    }
+    .card-footer {
+      padding: 2px;
+      #legend {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+#content #head {
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  position: relative;
+}
+#content #body .row {
+  align-items: center;
+  justify-content: center;
+}
+#content #body .row .col {
+  padding: 10px;
+}
+#content #body .row .col.col-3 {
+  padding: 0px;
+}

@@ -1,0 +1,50 @@
+#content {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#content #head {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+#content #body .col {
+  text-align: left;
+  font-size: small;
+  padding: 5px;
+  width: auto;
+  height: 13vh;
+  transition: all 1s;
+}
+#content #body .col .alert {
+  z-index: 10;
+  font-size: auto;
+  padding: 3px;
+  /*font-size: 13px*/
+  text-align: center;
+  box-shadow: 0px 1px 12px 0px #6a6f6d;
+}
+#content #body .col .alert.congress {
+  position: relative;
+  background-color: springgreen;
+}
+#content #body .col .alert.holiday {
+  background-color: orangered;
+  /*font-size: 13px*/
+}
+#content #body .col .alert.term.enable {
+  border-color: chartreuse;
+}
+#content #body .col .alert.term.disable {
+  border-color: crimson;
+}
+#content #body .col:hover {
+  box-shadow: 0px 1px 12px 0px #6a6f6d;
+  transition: all 500ms;
+}
+#content #body .col.currentDay {
+  background-color: lemonchiffon;
+}
+#content .clicked {
+  background-color: rgba(62, 206, 34, 0.5);
+  transition: all 1s;
+}

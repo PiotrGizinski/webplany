@@ -1,0 +1,89 @@
+{
+    "objects": {
+        "Database" : {
+            "enable" : true,
+            "database" : "mysql",
+            "host" : "localhost",
+            "port" : "3306",
+            "dbname" : "plany",
+            "charset" : "utf8",
+            "user" : "root",
+            "password" : ""
+        },
+        "Authorization" : {
+            "defaultRole" : "guest",
+            "loggedRole" : "user"
+        },
+        "ExceptionHandler" : {
+            "fatalTypes" : ["Error", "TypeError", "SmartyCompilerException"],
+            "displayErrors" : false,
+            "showThrowable" : false,
+            "trace" : false,
+            "simpleMessage" : "<h4 class='alert-heading'>W naszej aplikacji wystąpił błąd :(</h4><p></p><p class='mb-0'>Przepraszam za utudnienia, postaram się go jak najszybciej naprawić.</p>"
+        },
+        "Mailer" : {
+            "enable" : false,
+            "debug" : false,
+            "mailerConfig" : {
+                "Host" : "",
+                "Username" : "",
+                "Password" : "",
+                "SMTPAuth" : true,
+                "SMTPSecure" : "",
+                "Port" : "",
+                "CharSet" : ""
+            }
+        },
+        "Request" : {
+            "pathAction" : "\\Action\\",
+            "pathMVC" : "\\Modules\\",
+            "default" : {
+                "name" : "Website Error",
+                "class" : "Error"
+            },
+            "request" : {
+                "default" : {
+                    "name" : "Homepage",
+                    "class" : "Homepage",
+                    "access" : ["guest", "user"]
+                },
+                "calendar" : {
+                    "name" : "Calendar",
+                    "class" : "Calendar",
+                    "access" : ["user"]
+                },
+                "locations" : {
+                    "name" : "Localization",
+                    "class" : "Localization",
+                    "access" : ["user"]
+                },
+                "url1" : {
+                    "name" : "Example1",
+                    "url12" : {
+                        "name" : "Example12",
+                        "class" : "Activities",
+                        "access" : ["user"]
+                    },
+                    "url3" : {
+                        "name" : "Console",
+                        "class" : "Console",
+                        "access" : ["user"]
+                    }
+                },
+                "login" : {
+                    "name" : "Sign in",
+                    "class" : "login",
+                    "access" : ["guest"]
+                },
+                "logout" : {
+                    "name" : "Sign out",
+                    "class" : "login",
+                    "access" : ["user"]
+                }
+            }
+        }
+    },
+    "global" : {
+        "debug" : true
+    } 
+}

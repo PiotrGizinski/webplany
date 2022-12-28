@@ -1,0 +1,12 @@
+ErrorDocument 404 error
+ErrorDocument 500 error
+ErrorDocument 400 error
+ErrorDocument 403 error
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# Dla url weryfikowanego przez php
+FallbackResource index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L]
